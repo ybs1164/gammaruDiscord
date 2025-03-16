@@ -1,0 +1,24 @@
+{
+  "name": "gammarudiscord",
+  "version": "1.0.0",
+  "description": "gammaru discord bot",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ybs1164/gammaruDiscord.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ybs1164/gammaruDiscord/issues"
+  },
+  "homepage": "https://github.com/ybs1164/gammaruDiscord#readme",
+  "dependencies": {
+    "discord.js": "^14.18.0"
+  }
+}
