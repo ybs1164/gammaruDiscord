@@ -1,0 +1,2 @@
+# gammaruDiscord
+gammaru discord bot
