@@ -40,7 +40,7 @@ client.on('ready', async () => {
 
     await guild.members.fetch();
 
-    guild.members.cache.forEach(async member => {
+    for (let member in guild.members.cache) {
         const role = guild.roles.cache.find(r => r.name === "준회원(신입회원)");
         const role2 = guild.roles.cache.find(r => r.name === "정회원");
 
@@ -50,11 +50,12 @@ client.on('ready', async () => {
             try {
                 member.roles.add(role);
                 console.log(`Role ${role.name} added to ${member.user.username}`);
+                await new Promise(resolve => setTimeout(resolve, 1000));
             } catch (error) {
                 console.error('Something went wrong when adding the role: ', error);
             }
         }
-    })
+    }
 });
 
 client.on('messageReactionRemove', async (msg, user) => {
